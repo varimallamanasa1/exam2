@@ -26,7 +26,7 @@ pipeline{
                 script{
                     //docker.image('my-python-app:latest').push('latest')
                     echo 'Docker image is pushed to Docker Hub .'
-                    bat' docker tag exam2:latest varimallamansa1/exam2:latest'
+                    bat ' docker tag exam2:latest varimallamansa1/exam2:latest'
                     bat 'docker push varimallamansa1/exam2:latest'
                 }
             }
