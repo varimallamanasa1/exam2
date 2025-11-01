@@ -35,7 +35,7 @@ pipeline{
             steps{
                 script{
                     echo 'deployment and service are created .'
-                    bat 'kubectl apply -f deployment.yaml --validate=false'
+                    bat 'kubectl apply -f deployment.yaml  exam2-deployment'
                     bat 'kubectl apply -f service.yaml'
                 }
             }
